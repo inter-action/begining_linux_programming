@@ -6,6 +6,8 @@ SHELL := /bin/bash
 test:
 	cargo test
 
+args=""
+
 # http://stackoverflow.com/questions/28592043/what-is-wrong-with-my-string-substitution-using-sed-on-mac-os-x
 # remove “ & ”
 fmt_src:
@@ -18,3 +20,7 @@ clean:
 
 test_with_stdout:
 	cargo test -- --nocapture
+
+#  make compile args=copy*.c
+compile:
+	/bin/bash ./scripts/compile.sh $(args)
