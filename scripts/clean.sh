@@ -6,6 +6,9 @@ function rm_file(){
     rm -f $file;
 }
 
+# remove file that starts with ".!"
+find src -type f -name ".!*" -exec rm -f {} \;
+
 for file in $(find src -type f); do
     case $file in
     *.*) # has a extension
