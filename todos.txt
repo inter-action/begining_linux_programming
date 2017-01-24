@@ -1,0 +1,10 @@
+
+
+todos:
+
+    done:
+    
+    pending:
+        
+        write a bash shell clean all the garbage src files
+            binaries, *.o, *.a

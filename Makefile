@@ -1,12 +1,9 @@
 # PATH  := node_modules/.bin:$(PATH)
 SHELL := /bin/bash
 
-.PHONY: test
-
-test:
-	cargo test
-
 args=""
+
+.PHONY: test
 
 # http://stackoverflow.com/questions/28592043/what-is-wrong-with-my-string-substitution-using-sed-on-mac-os-x
 # remove “ & ”
